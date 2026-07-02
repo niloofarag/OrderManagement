@@ -50,3 +50,12 @@ Other notable decisions: a `SemaphoreSlim` guard against concurrent stock overse
 - **Endpoints**: `POST /api/auth/login`, `POST/GET /api/orders`, `GET /api/orders/{id}`, `POST /api/orders/{id}/next-status`, `DELETE /api/orders/{id}` (Admin only), `POST /api/orders/bulk`.
 - **Domain**: `User` covers both login accounts and customers (`Role = Admin/User`); `Order` has snapshotted `OrderItem.UnitPrice` (not a live product price reference).
 - **Not included by design**: unit tests, logging, CQRS/MediatR, registration/refresh tokens, extra entities beyond `User`/`Product`/`Order`/`OrderItem`.
+
+## Status
+
+- Order/Product/User system — done
+- Login auth (JWT) — done
+- Seeder & migrations — done
+- Layered architecture — done
+- Logging (Serilog) — not implemented
+- Tests — not implemented
